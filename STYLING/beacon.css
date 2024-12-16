@@ -1,0 +1,262 @@
+.header-section {
+    display: flex;
+}
+
+.header-section h1 {
+    font-size: 58px;
+    text-transform: uppercase;
+    padding-top: 10vh;
+    padding-left: 10vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.header-section p {
+    padding-left: 10vh;
+    width: 80vh;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.right-side-header img {
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20%;
+    padding-top: 16vh;
+    padding-left: 20vh;
+}
+
+
+.About-button {
+    display: inline-block;
+    background-color: #800020;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-left: 10vh;
+}
+
+.cta-button:hover {
+    background-color: rgb(241, 76, 76);
+}
+
+/* Section Styling */
+.mission-vision-values {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.mission-vision-values h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #800020;
+    animation: fadeInUp 1s ease-out;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUpCard 1.5s ease-out forwards;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 2rem;
+    color: #800020;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUpCard {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Co-curricular Activities Section Styling */
+.co-curricular-activities {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.co-curricular-activities h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #800020;
+    animation: fadeInUp 1s ease-out;
+}
+
+.activity-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.activity-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.activity-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .activity-images img {
+        width: 100%;
+        height: auto;
+    }
+}
+.contact-us {
+background-color: #f9f9f9; /* Light background */
+padding: 60px 0;
+}
+
+.section-title {
+text-align: center;
+color: #800020; /* Maroon color */
+font-size: 2rem;
+margin-bottom: 40px;
+font-family: 'Georgia', serif;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.contact-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #800020;
+    /* Maroon background */
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+    /* Centered and space below */
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    color: #800020;
+    /* Maroon for heading */
+    margin-bottom: 15px;
+}
+
+.contact-item p {
+    font-size: 1.1rem;
+    color: #555;
+    /* Neutral text color */
+}
+
+.contact-link {
+    color: #800020;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    color: #B22234;
+    /* Slightly lighter maroon for hover */
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 80%;
+        /* Make contact items take more width on small screens */
+        margin-bottom: 20px;
+    }
+}

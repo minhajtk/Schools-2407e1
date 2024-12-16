@@ -1,0 +1,323 @@
+.home-page {
+    background-image: url('../IMAGES/hoping.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* Dark Overlay for Visibility */
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    /* Adjust opacity (0.6) for darker or lighter effect */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Keeps overlay above the background image */
+}
+
+/* Content Styling */
+.content {
+    position: relative;
+    z-index: 2;
+    /* Keeps content above the overlay */
+    color: #fff;
+    /* White text for contrast */
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content h1,
+.content p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Add shadow to further enhance visibility */
+}
+.content h1{
+    font-size: 3rem;
+}
+
+.content .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #800020;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.content .btn:hover {
+    background-color: #5e463a;
+    color: white;
+}
+
+
+
+.schools-section {
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #800020;
+    /* Deep maroon for a professional touch */
+    margin-bottom: 30px;
+}
+
+/* School Card Styling */
+.school-card {
+    background-color: #ffffff;
+    /* White background for contrast */
+    border: 1px solid #ddd;
+    /* Light border for subtle definition */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.school-card:hover {
+    transform: translateY(-10px);
+    /* Lift on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.school-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Ensures the image fits the card nicely */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.school-card-body {
+    padding: 20px;
+}
+
+.school-card-title {
+    font-size: 1.5rem;
+    color: #333;
+    /* Neutral text color */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    /* Makes the title look cleaner */
+}
+
+.school-card-text {
+    font-size: 0.95rem;
+    color: #555;
+    /* Softer color for the paragraph */
+    line-height: 1.6;
+    /* Improves readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .school-img {
+        height: 180px;
+    }
+
+    .school-card-title {
+        font-size: 1.25rem;
+    }
+
+    .school-card-text {
+        font-size: 0.9rem;
+    }
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #800020, #ff5733);
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 80%;
+}
+
+
+/* Transition for container */
+.transition-container {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Transition for images */
+.transition-img {
+    transition: transform 1.5s ease, opacity 1s ease-in-out;
+    padding-left: 10vh;
+}
+
+/* Transition for content */
+.transition-content {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s ease-in-out;
+}
+
+/* Active state styling */
+.carousel-item.active .transition-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carousel-item.active .transition-img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* Hover effect on images */
+.transition-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Improve overall carousel controls visibility */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.carousel {
+    background-color: lightgray;
+    padding-bottom: 5vh;
+    padding-top: 2vh;
+}
+
+.unique-cards-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+
+}
+
+.unique-card {
+    width: 260px;
+    background: linear-gradient(145deg, #e2e2e2, #ffffff);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+
+}
+
+.unique-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text-content {
+    padding: 20px;
+    color: #333;
+}
+
+.text-content h2 {
+    font-size: 1.4rem;
+    color: #7B0323;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.unique-card:hover .image-container img {
+    filter: brightness(0.8);
+}
+
+/* Gallery Styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    animation: fadeIn 1.5s ease-in-out;
+    background-color: #f4f4f4;
+  padding-left: 10vh;
+    min-height: 80vh;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 45vh;
+    width: 40vh;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

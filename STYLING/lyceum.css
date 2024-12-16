@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #004d99;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem 1rem;
+    background: #fff;
+    margin: 1rem auto;
+    max-width: 1100px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #004d99;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #004d99;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+a {
+    color: #004d99;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.contact-us {
+    background-color: #f9f9f9; /* Light background */
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: #800020; /* Maroon color */
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.contact-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #800020; /* Maroon background */
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto; /* Centered and space below */
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    color: #800020; /* Maroon for heading */
+    margin-bottom: 15px;
+}
+
+.contact-item p {
+    font-size: 1.1rem;
+    color: #555; /* Neutral text color */
+}
+
+.contact-link {
+    color: #800020;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    color: #B22234; /* Slightly lighter maroon for hover */
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 80%; /* Make contact items take more width on small screens */
+        margin-bottom: 20px;
+    }
+}

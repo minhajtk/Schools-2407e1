@@ -1,0 +1,19 @@
+ 
+.nav-item a{
+    color: white!important;
+}
+  .navbar{
+    padding: 1vh 0;
+    background-color: #800020 !important; 
+  }
+  .dropdown-menu li a{
+    color: black  !important;
+  }
+  .logo-of-knowledge{
+    height: 13vh;
+    width: 13vh;
+  }
+  .navbar .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+  }

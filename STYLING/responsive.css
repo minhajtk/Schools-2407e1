@@ -1,0 +1,33 @@
+@media only screen and (max-width:768px){
+    .discover-sections div{
+        gap: 2vh;
+    }
+    .header-section h1{
+        font-size: 35px;
+    }
+    .header-section{
+        flex-wrap: wrap;
+    }
+    .right-side-header img{
+        max-width: 100%;
+        padding-left:0 ;
+        border-radius: 0;
+    }
+    .card{
+        width: 85%;
+    }
+    .aps-sub{
+        flex-wrap: wrap;
+    }
+    .sub-info-content{
+        padding-right: 5vh;
+    }
+    .falcon-about-section{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .falcon-about-section div{
+        width: 90%!important;
+        margin: 0 auto;
+    }
+}

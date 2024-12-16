@@ -1,0 +1,41 @@
+.aps-home-banner{
+    height: 60vh;
+    background: url(../IMAGES/aps.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.aps-info{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 8vh 12vh;
+    gap: 10vh;
+}
+.aps-info-pic img{
+    height: 40vh;
+    width: 50vh; 
+}
+.aps-sub-info{
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+}
+.aps-sub-info-rowreverse{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+
+
+}
+.aps-sub{
+    display: flex;
+    gap: 10vh;
+    padding-left: 4vh;
+}
+
+
+    
+
+

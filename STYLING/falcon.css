@@ -1,0 +1,352 @@
+  /* General Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa; /* Lighter background */
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #fbe0d6; /* Lighter gold background */
+    color: #800020; /* Maroon text for harmony */
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Optional font for elegance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: lavender; /* Lighter background for hero section */
+    border-radius: 10px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.hero .content {
+    max-width: 50%;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: maroon;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero button {
+    background-color: #800020;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #c0113d9f;
+    color: black;
+}
+
+.hero img {
+    max-width: 60%;
+    border-radius: 10px;
+    height: 50%;
+}
+
+.about-section {
+padding: 50px 0;
+}
+
+.about-img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
+border-radius: 10px;
+}
+
+.about-title {
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.about-description {
+font-size: 1rem;
+line-height: 1.6;
+margin-bottom: 15px;
+}
+
+.about-highlight {
+font-size: 1.2rem;
+font-weight: bold;
+color: #333;
+margin-bottom: 20px;
+}
+
+.about-btn {
+display: inline-block;
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.about-btn:hover {
+background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+.about-section .row {
+flex-direction: column;
+text-align: center;
+}
+
+.about-img {
+margin-bottom: 20px;
+}
+
+.about-btn {
+margin-top: 20px;
+}
+}
+
+
+.info-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.info-card {
+    background-color:lavender;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%;
+}
+
+.info-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #800020; /* Maroon background */
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.info-title {
+    font-size: 1.5rem;
+    color: #800020;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+}
+
+.info-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-btn {
+    background-color: #800020;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.info-btn:hover {
+    background-color: #B22234; /* Lighter maroon */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.col-md-4 {
+    flex: 1;
+    min-width: 250px; /* Ensures the columns are equal width */
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4 {
+        width: 80%; /* Make columns more spacious on small screens */
+        margin-bottom: 20px;
+    }
+}
+.campus-details {
+    padding: 60px 0;
+    background-color: #fdfdfd; /* Lighter background */
+}
+
+.section-title {
+    text-align: center;
+    color: #800020; /* Maroon color */
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+}
+
+.campus-category {
+    margin-bottom: 40px;
+}
+
+.category-title {
+    font-size: 1.6rem;
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.campus-card {
+    background-color:blanchedalmond; /* White card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.campus-card:hover {
+    transform: translateY(-10px); /* Hover effect for interactivity */
+}
+
+.campus-title {
+    font-size: 1.2rem;
+    color: #800020;
+    margin-bottom: 10px;
+}
+
+.campus-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.campus-list li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .campus-card {
+        margin-bottom: 20px; /* Ensure spacing on mobile */
+    }
+}
+
+.contact-us {
+    background-color: #f9f9f9; /* Light background */
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: #800020; /* Maroon color */
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.contact-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #800020; /* Maroon background */
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto; /* Centered and space below */
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    color: #800020; /* Maroon for heading */
+    margin-bottom: 15px;
+}
+
+.contact-item p {
+    font-size: 1.1rem;
+    color: #555; /* Neutral text color */
+}
+
+.contact-link {
+    color: #800020;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    color: #B22234; /* Slightly lighter maroon for hover */
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 80%; /* Make contact items take more width on small screens */
+        margin-bottom: 20px;
+    }
+}
